@@ -14,9 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.conf import settings
 from django.conf.urls import url, include
 
 urlpatterns = [
 	url(r'^',include('pokedex.urls')),
     url(r'^admin/', admin.site.urls),
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += [
+        url(r'^__debug__/', include(debug_toolbar.urls)),
+    ]

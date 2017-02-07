@@ -5,7 +5,7 @@ from datetime import datetime
 #Page d'acceuil, a la racine du site
 def index(request):
 	
-    return render(request,'/acceuil.html')
+    return render(request,'pokedex/acceuil.html')
 
 #Page de sommaire, a /sommaire
 def sommaire(request):
