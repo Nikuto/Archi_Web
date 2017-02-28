@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ["mordor"]
 # Application definition
 
 INSTALLED_APPS = [
+    'pokedex.apps.PokedexConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
