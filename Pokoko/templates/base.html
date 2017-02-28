@@ -6,7 +6,7 @@
 
    <link rel="stylesheet" href="/static/css/bootstrap.css" />
 
-   <title>{% block title %}Mon super pokedex{% endblock %}</title>
+   <title>{% block title %}{% endblock %}</title>
 
 </head>
 
@@ -19,37 +19,49 @@
 
   </div>
 
-  <div class="container">
+  <div class="container text-center">
     <div class="row">
 
-           {% block nav %}
-
-            <div class="col-sm-3"><a href="{% url 'index' %}" ">Accueil</a></div>
-
-            <div class="col-sm-3"><a href="{% url 'sommaire' %}">Sommaire</a></div>
-
-            <div class="col-sm-3"><a href="{% url 'afficher_date' %}">Date</a></div>
-
-            <div class="col-sm-3"><p>La faut que je mette l'avatar </p></a></div>
-
+          {% block nav %}
+            <div class="col-sm-10">
+              <div class="col-sm-2"><a href="{% url 'index' %}" ">Accueil</a></div>
+              <div class="col-sm-2"><a href="{% url 'sommaire' %}">Sommaire</a></div>
+              <div class="col-sm-2"><a href="{% url 'afficher_date' %}">Date</a></div>
+              <div class="col-sm-2"><p>pkm 4 </p></div>
+              <div class="col-sm-2"><p>pkm 5 </p></div>
+              <div class="col-sm-2"><p>pkm 6 </p></div>
+            </div>
+            <div class="col-sm-2">
+            <p>Carte pokemon</p>
+            </div>
            {% endblock %}
+    </div>
+  </div>
+
+    <div class="row">
+
+      <div class="col-sm-3 text-center">
+      <h2> colonne de recherche </h2>
+      </div>
+
+      <div class="col-sm-9">
+        <section id="content">
+
+          {% block content %}{% endblock %}
+
+        </section>
+      </div>
 
     </div>
-
-
+<div class="footer text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4>&copy; Pokedex</h4>
+      </div>
+    </div>
   </div>
-  <div>
-  
-    <section id="content">
-
-      {% block content %}{% endblock %}
-
-    </section>
-
-  </div>
-
-<footer>&copy; Pokedex</footer>
-
+</div>
 </body>
 
 </html>
