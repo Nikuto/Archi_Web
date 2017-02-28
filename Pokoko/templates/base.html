@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+   <link rel="stylesheet" href="/media/css/style.css" />
+
+   <title>{% block title %}Mon super pokedex{% endblock %}</title>
+
+</head>
+
+<body>
+
+<header>Pokedex</header>
+
+    <nav>
+
+       {% block nav %}
+
+       <ul>
+
+            <li><a href="{% url 'index' %}" ">Accueil</a></li>
+
+            <li><a href="{% url 'sommaire' %}">Sommaire</a></li>
+
+            <li><a href="{% url 'afficher_date' %}">Date</a></li>
+
+       </ul>
+
+       {% endblock %}
+
+   </nav>
+
+   <section id="content">
+
+       {% block content %}{% endblock %}
+
+   </section>
+
+<footer>&copy; Pokedex</footer>
+
+</body>
+
+</html>
