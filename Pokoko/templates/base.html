@@ -4,7 +4,7 @@
 
 <head>
 
-   <link rel="stylesheet" href="/media/css/style.css" />
+   <link rel="stylesheet" href="/static/css/bootstrap.css" />
 
    <title>{% block title %}Mon super pokedex{% endblock %}</title>
 
@@ -12,31 +12,41 @@
 
 <body>
 
-<header>Pokedex</header>
+  <div class="accueil-logo text-center"> 
 
-    <nav>
+  <h1>Pokedex</h1> 
+  <p> Attrapez les tous </p>
 
-       {% block nav %}
+  </div>
 
-       <ul>
+  <div class="container">
+    <div class="row">
 
-            <li><a href="{% url 'index' %}" ">Accueil</a></li>
+           {% block nav %}
 
-            <li><a href="{% url 'sommaire' %}">Sommaire</a></li>
+            <div class="col-sm-3"><a href="{% url 'index' %}" ">Accueil</a></div>
 
-            <li><a href="{% url 'afficher_date' %}">Date</a></li>
+            <div class="col-sm-3"><a href="{% url 'sommaire' %}">Sommaire</a></div>
 
-       </ul>
+            <div class="col-sm-3"><a href="{% url 'afficher_date' %}">Date</a></div>
 
-       {% endblock %}
+            <div class="col-sm-3"><p>La faut que je mette l'avatar </p></a></div>
 
-   </nav>
+           {% endblock %}
 
-   <section id="content">
+    </div>
 
-       {% block content %}{% endblock %}
 
-   </section>
+  </div>
+  <div>
+  
+    <section id="content">
+
+      {% block content %}{% endblock %}
+
+    </section>
+
+  </div>
 
 <footer>&copy; Pokedex</footer>
 

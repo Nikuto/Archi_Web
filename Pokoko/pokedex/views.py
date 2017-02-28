@@ -9,7 +9,7 @@ def index(request):
 
 #Page de sommaire, a /sommaire
 def sommaire(request):
-	return HttpResponse("Oep,le sommaire")
+	return render(request,'test/sommaire.html')
 
 #page d'un sommaire precis, a /sommaire/X
 def sommaire_note(request,id_sommaire):
