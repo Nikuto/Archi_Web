@@ -274,6 +274,20 @@ th {
   color: inherit;
   background-color: #DF3239;
 }
+.accueil-colonne-recherche{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #F43918;
+}
+.accueil-footer{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  background-color: #111010;
+  color:#fcf9f9;
+}
 .glyphicon {
   position: relative;
   top: 1px;
