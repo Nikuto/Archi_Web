@@ -17,6 +17,6 @@ class Pokemon(models.Model):
 class Relation(models.Model):
 	type_offensif = models.ForeignKey(Type, related_name = 'type_offensif')
 	type_defensif = models.ForeignKey(Type, related_name = 'type_defensif')
-	relation = models.IntegerField(default = 1)
+	relation = models.FloatField(default = 1)
 	def __str__(self):
-		return self.type_offensif + "/" + self.type_defensif
+		return str(self.type_offensif) + ' / ' + str(self.type_defensif)
