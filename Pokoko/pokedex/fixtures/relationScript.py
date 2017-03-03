@@ -1,40 +1,53 @@
 import json
+import unicodedata
 
-tableType = [
-	"Acier",
-	"Combat",
-	"Dragon",
-	"Eau",
-	"Electrik",
-	"Fee",
-	"Feu",
-	"Glace",
-	"Insecte",
-	"Normal",
-	"Plante",
-	"Poison",
-	"Psy",
-	"Roche",
-	"Sol",
-	"Spectre",
-	"Tenebres",
-	"Vol"
-]
+def foreign_key_type(nom_type):
+	return{
+		'Acier':     "type : 1",
+		'Combat':    "type : 2",
+	 	'Dragon':    "type : 3",
+	 	'Eau':       "type : 4",
+	 	'Electrik':  "type : 5",
+	 	'Fée':       "type : 6",
+	 	'Fee':       "type : 6",
+	 	'Feu':       "type : 7",
+	 	'Glace':     "type : 8",
+	 	'Insecte':   "type : 9",
+	 	'Normal':    "type : 10",
+	 	'Plante':    "type : 11",
+	 	'Poison':    "type : 12",
+	 	'Psy':       "type : 13",
+		'Roche':     "type : 14",
+		'Sol':       "type : 15",
+	 	'Spectre':   "type : 16",
+	 	'Ténèbres':  "type : 17",
+	 	'Tenebres':  "type : 17",
+	 	'Vol':       "type : 18",
+		'': ""
+	}[nom_type]
+	 
 
-relationTable = []
 
-for attaque in tableType:
-	for defense in tableType:
-		relationTable.append({
-			"model": "pokedex.relation",
-			"fields": {
-				"type_offensif": attaque,
-				"type_defensif": defense,
-				"relation": 1
-			}
-		})
 
-json_string=json.dumps(relationTable,ensure_ascii=False,
+relation_data[]=json.load(open("relation.json"))
+
+
+
+
+json_string=json.dumps(relation_data,ensure_ascii=False,
 					   indent=4, separators=(',', ': '))	
 
+
 print (json_string)
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,33 @@
 import json
 import unicodedata
 
+def foreign_key_type(nom_type):
+	return{
+		'Acier':     1,
+		'Combat':    2,
+	 	'Dragon':    3,
+	 	'Eau':       4,
+	 	'Electrik':  5,
+	 	'Fée':       6,
+	 	'Fee':       6,
+	 	'Feu':       7,
+	 	'Glace':     8,
+	 	'Insecte':   9,
+	 	'Normal':    10,
+	 	'Plante':    11,
+	 	'Poison':    12,
+	 	'Psy':       13,
+		'Roche':     14,
+		'Sol':       15,
+	 	'Spectre':   16,
+	 	'Ténèbres':  17,
+	 	'Tenebres':  17,
+	 	'Vol':       18,
+		'': 
+	}[nom_type]
+	 
+
+
 
 pokedex_data=json.load(open("./oldPokemon.json"))
 
@@ -16,7 +43,7 @@ for value in pokedex_data["values"]:
 			"numero_pokemon": value[0],
 			"nom_pokemon": value[1],
 			"generation_pokemon": value[2],
-			"type_pokemon": [value[3], value[4]],
+			"type_pokemon": [foreign_key_type(value[3]), foreign_key_type(value[4])],
 			"cout_pokemon": value[5]
 		}
 	})
@@ -25,6 +52,17 @@ for value in pokedex_data["values"]:
 json_string=json.dumps(new_data,ensure_ascii=False,
 					   indent=4, separators=(',', ': '))	
 
-json_string = unicodedata.normalize('NFKD', json_string).encode('ASCII', 'ignore')
 
-print json_string
+print (json_string)
+
+
+
+
+
+
+
+
+
+
+
+
