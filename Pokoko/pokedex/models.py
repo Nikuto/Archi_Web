@@ -11,6 +11,6 @@ class Pokemon(models.Model):
 	cout_pokemon = models.IntegerField(default = 0)
 
 class Relation(models.Model):
-	type1 = models.ForeignKey(Type, related_name = 'type1')
-	type2 = models.ForeignKey(Type, related_name = 'type2')
+	type_offensif = models.ForeignKey(Type, related_name = 'type1')
+	type_defensif = models.ForeignKey(Type, related_name = 'type2')
 	relation = models.IntegerField(default = 1)

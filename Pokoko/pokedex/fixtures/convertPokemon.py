@@ -1,6 +1,8 @@
 import json
+import unicodedata
 
-pokedex_data=json.load(open("./pokemon.json"))
+
+pokedex_data=json.load(open("./oldPokemon.json"))
 
 
 new_data = []
@@ -19,7 +21,10 @@ for value in pokedex_data["values"]:
 		}
 	})
 
+
 json_string=json.dumps(new_data,ensure_ascii=False,
 					   indent=4, separators=(',', ': '))	
 
-print (json_string)
+json_string = unicodedata.normalize('NFKD', json_string).encode('ASCII', 'ignore')
+
+print json_string

@@ -1,0 +1,110 @@
+[
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Acier"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Combat"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Dragon"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Eau"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Electrik"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Fée"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Feu"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Glace"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Insecte"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Normal"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Plante"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Poison"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Psy"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Roche"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Sol"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Spectre"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Ténèbres"
+		}
+	},
+	{
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "Vol"
+		}
+	}
+]

@@ -1,0 +1,2594 @@
+[
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Acier"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Combat"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Dragon"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Eau"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Electrik"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Fee"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Feu"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Glace"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Insecte"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Normal"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Plante"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Poison"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Psy"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Roche"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Sol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Spectre"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Tenebres"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Acier",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Combat",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Dragon",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Eau",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Electrik",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Fee",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Feu",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Glace",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Insecte",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Normal",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Plante",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Poison",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Psy",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Roche",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Sol",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Spectre",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Tenebres",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    },
+    {
+        "fields": {
+            "relation": 1,
+            "type_defensif": "Vol",
+            "type_offensif": "Vol"
+        },
+        "model": "pokedex.relation"
+    }
+]
