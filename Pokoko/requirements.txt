@@ -1,3 +1,4 @@
 Django==1.10.5
-django-bootstrap3==8.2.1
-wheel==0.24.0
+django-bootstrap3==8.1.0
+django-debug-toolbar==1.6
+sqlparse==0.2.2
