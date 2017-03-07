@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block content %}
+
+<h1>{{pokemon.nom_pokemon}}</h1>
+
+<img src={{pokemon.image_pokemon.url}}</img>
+<h3>Numéro : {{pokemon.numero_pokemon}}</h3>
+<h3>Type : {{pokemon.type_pokemon.nom_type}}</h3>
+<h3>Generation : {{pokemon.generation_pokemon}}</h3>
+<h3>Cout : {{pokemon.cout_pokemon}}</h3>
+
+{% endblock %}

@@ -4,11 +4,12 @@ from datetime import datetime
 from django.contrib.auth import authenticate, login, logout
 from django.core.urlresolvers import reverse
 from pokedex.forms import ConnexionForm
+from .models import Pokemon
 
-#Page d'acceuil, a la racine du site
+#Page d'accueil, a la racine du site
 def index(request):
     
-    return render(request,'pokedex/acceuil.html')
+    return render(request,'pokedex/accueil.html')
 
 #Page de sommaire, a /sommaire
 def sommaire(request):
@@ -52,3 +53,8 @@ def deconnexion(request):
 
     logout(request)
     return redirect(reverse(connexion))
+
+def pokemon(request):
+    pokemon = Pokemon.objects.get(nom_pokemon = "Dracaufeu")
+    return render(request, 'test/pokemon.html', 
+        {'pokemon' : pokemon})

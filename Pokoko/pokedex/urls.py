@@ -14,5 +14,6 @@ urlpatterns = [
     url(r'^addition/(?P<nb1>\d+)/(?P<nb2>\d+)/$',views.addition,name='addition'),
 
     
+    url(r'^pokemon/',views.pokemon,name='pokemon'),
 
 ]

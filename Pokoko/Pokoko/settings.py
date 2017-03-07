@@ -71,6 +71,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Pokoko.wsgi.application'
 
+#Chemin pour les images
+MEDIA_ROOT = './pokedex/images/'
+
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
