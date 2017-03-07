@@ -12,6 +12,7 @@ class Pokemon(models.Model):
 	generation_pokemon = models.IntegerField(default = 0)
 	type_pokemon = models.ManyToManyField(Type, blank=False)
 	cout_pokemon = models.IntegerField(default = 0)
+	image_pokemon = models.ImageField()
 	def __str__(self):
 		return self.nom_pokemon
 
@@ -20,11 +21,10 @@ class Relation(models.Model):
 	type_defensif = models.ForeignKey(Type, related_name = 'type_defensif')
 	relation = models.FloatField(default = 1)
 	def __str__(self):
-		return self.type_offensif + "/" + self.type_defensif
+		return str(self.type_offensif) + " / " + str(self.type_defensif)
 
 class Profil(models.Model):
 	user = models.OneToOneField(User)
 	avatar = models.ImageField(blank=True,upload_to="avatars/")
-
 	def __str__(self):
 		return "Profil de {0}".format(self.user.username)

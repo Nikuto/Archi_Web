@@ -27,16 +27,10 @@ def foreign_key_type(nom_type):
 	}[nom_type]
 	 
 
-
-
 relation_data[]=json.load(open("relation.json"))
-
-
-
 
 json_string=json.dumps(relation_data,ensure_ascii=False,
 					   indent=4, separators=(',', ': '))	
-
 
 print (json_string)
 

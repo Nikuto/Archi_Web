@@ -3,14 +3,16 @@ from django.http import HttpResponse
 from datetime import datetime
 from django.contrib.auth import authenticate, login, logout
 from django.core.urlresolvers import reverse
+from pokedex.forms import ConnexionForm
+from .models import Pokemon
 from pokedex.forms import ConnexionForm,InscriptionForm
 from django.contrib.auth.models import User
 from django.shortcuts import redirect
 
-#Page d'acceuil, a la racine du site
+#Page d'accueil, a la racine du site
 def index(request):
     
-    return render(request,'pokedex/acceuil.html')
+    return render(request,'pokedex/accueil.html')
 
 #Page de sommaire, a /sommaire
 def sommaire(request):
@@ -74,4 +76,7 @@ def inscription(request):
             form = InscriptionForm()
     return render(request,'pokedex/inscription.html',locals())
 
-
+def pokemon(request):
+    pokemon = Pokemon.objects.get(nom_pokemon = "Dracaufeu")
+    return render(request, 'test/pokemon.html', 
+        {'pokemon' : pokemon})
