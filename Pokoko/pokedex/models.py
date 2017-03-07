@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Type(models.Model):
 	nom_type = models.CharField(max_length=64)
@@ -20,3 +21,10 @@ class Relation(models.Model):
 	relation = models.IntegerField(default = 1)
 	def __str__(self):
 		return self.type_offensif + "/" + self.type_defensif
+
+class Profil(models.Model):
+	user = models.OneToOneField(User)
+	avatar = models.ImageField(blank=True,upload_to="avatars/")
+
+	def __str__(self):
+		return "Profil de {0}".format(self.user.username)

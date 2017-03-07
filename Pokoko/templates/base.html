@@ -22,7 +22,6 @@
   <div class="container ">
     <div class="row">
 
-          {% block nav %}
             <div class="col-sm-10">
               <div class="col-sm-2"><a href="{% url 'index' %}" ">Accueil</a></div>
               <div class="col-sm-2"><a href="{% url 'sommaire' %}">Sommaire</a></div>
@@ -32,9 +31,13 @@
               <div class="col-sm-2"><p>pkm 6 </p></div>
             </div>
             <div class="col-sm-2">
-            <p>Carte pokemon</p>
+            <div class="col-sm-2">
+                <ul classe="list-unstyled">
+                    <li><p>Connexion</p></li>
+                    <li><a href="{% url 'connexion' %}" ">S'inscrire</a></li>
+                </ul>
             </div>
-           {% endblock %}
+            </div>
     </div>
   </div>
 

@@ -1,29 +1,54 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import datetime
+from django.contrib.auth import authenticate, login, logout
+from django.core.urlresolvers import reverse
+from pokedex.forms import ConnexionForm
 
 #Page d'acceuil, a la racine du site
 def index(request):
-	
+    
     return render(request,'pokedex/acceuil.html')
 
 #Page de sommaire, a /sommaire
 def sommaire(request):
-	return render(request,'test/sommaire.html')
+    return render(request,'test/sommaire.html')
 
 #page d'un sommaire precis, a /sommaire/X
 def sommaire_note(request,id_sommaire):
-	if int(id_sommaire) > 100:
-		raise Http404
+    if int(id_sommaire) > 100:
+        raise Http404
 
-	return HttpResponse("Tu demandes le sommaire {0} ? J'ai rien fait dmg.".format(id_sommaire))
+    return HttpResponse("Tu demandes le sommaire {0} ? J'ai rien fait dmg.".format(id_sommaire))
 
 #Test pour afficher la date
 def date_actuelle(request):
-	return render(request, 'test/date.html',{'date':datetime.now()})
+    return render(request, 'test/date.html',{'date':datetime.now()})
+
 
 #Test pour additionner
 def addition(request,nb1,nb2):
-	total = int(nb1) + int(nb2)
+    total = int(nb1) + int(nb2)
 
-	return render(request,'test/addition.html',locals())
+    return render(request,'test/addition.html',locals())
+
+def connexion(request):
+    error = False
+    if (request.method == "POST"):
+        form = ConnexionForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data["username"]
+            password = form.cleaned_data["password"]
+            user = authenticate(username=username, password=password)#test de log
+            if user:  # Si l'objet renvoyé n'est pas None
+                login(request, user)  # nous connectons l'utilisateur
+            else: # sinon une erreur sera affichée
+                error = True
+        else:
+            form = ConnexionForm()
+    return render(request, 'pokedex/connexion.html', locals())
+
+def deconnexion(request):
+
+    logout(request)
+    return redirect(reverse(connexion))
