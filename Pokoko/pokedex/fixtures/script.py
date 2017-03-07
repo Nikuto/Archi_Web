@@ -1,6 +1,6 @@
 import json
 
-pokedex_data=json.load(open("./pokemon.json"))
+pokedex_data=json.load(open("./oldPokemon.json"))
 
 
 new_data = []
