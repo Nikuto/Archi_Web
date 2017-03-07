@@ -1,29 +1,37 @@
 {% extends "base.html" %}
 
-{% block title %}Inscription{% endblock %}
-
 {% block content %}
 
-	<h1>Se connecter</h1>
-	{% if error %}
-	
-	<p><strong>Utilisateur inconnu ou mauvais de mot de passe.</strong></p>
-	{% endif %}
+{% if form.errors %}
+<p>Votre nom de compte et votre mot de passe ne correspondent pas, veuillez reesayé.</p>
+{% endif %}
 
-	{% if user.is_authenticated %}
+<h1>Se Connecter</h1>
 
-	Vous êtes connecté, {{ user.username }} !
-	{% else %}
+{% if next %}
+    {% if user.is_authenticated %}
+    <p>Vous etes déja connecté {{ user.username }}</p>
+    {% else %}
+    <p>Veuillez vous connecter pour voir cette page.</p>
+    {% endif %}
+{% endif %}
 
-	<form method="post" action=".">
+<form method="post" action=".">
+{% csrf_token %}
+<table>
+<tr>
+    <td>{{ form.username.label_tag }}</td>
+    <td>{{ form.username }}</td>
+</tr>
+<tr>
+    <td>{{ form.password.label_tag }}</td>
+    <td>{{ form.password }}</td>
+</tr>
+</table>
 
-	    {% csrf_token %}
+<input type="submit" value="Connexion" />
+<input type="hidden" name="next" value="{{ next }}" />
+</form>
 
-	    {{ form.as_p }}
-	    <input type="submit" value="Se connecter" />
-
-	</form>
-
-	{% endif %}
 
 {% endblock %}

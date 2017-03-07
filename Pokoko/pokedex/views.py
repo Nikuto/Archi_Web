@@ -5,6 +5,9 @@ from django.contrib.auth import authenticate, login, logout
 from django.core.urlresolvers import reverse
 from pokedex.forms import ConnexionForm
 from .models import Pokemon
+from pokedex.forms import ConnexionForm,InscriptionForm
+from django.contrib.auth.models import User
+from django.shortcuts import redirect
 
 #Page d'accueil, a la racine du site
 def index(request):
@@ -42,7 +45,7 @@ def connexion(request):
             password = form.cleaned_data["password"]
             user = authenticate(username=username, password=password)#test de log
             if user:  # Si l'objet renvoyé n'est pas None
-                login(request, user)  # nous connectons l'utilisateur
+                login(request, user,redirect_field_name='pokedex/index')  # nous connectons l'utilisateur
             else: # sinon une erreur sera affichée
                 error = True
         else:
@@ -53,6 +56,24 @@ def deconnexion(request):
 
     logout(request)
     return redirect(reverse(connexion))
+
+def inscription(request):
+    error = False
+    if (request.method == "POST"):
+        form = InscriptionForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data["username"]
+            password = form.cleaned_data["password"]
+            mail = form.cleaned_data["mail"]
+            User.objects.create_user(username,mail,password)
+            user = authenticate(username=username, password=password)
+            if user:
+                login(request, user,redirect_field_name='pokedex/index')
+            else:
+                error = True
+        else:
+            form = InscriptionForm()
+    return render(request,'pokedex/inscription.html',locals())
 
 def pokemon(request):
     pokemon = Pokemon.objects.get(nom_pokemon = "Dracaufeu")

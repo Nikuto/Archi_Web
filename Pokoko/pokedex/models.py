@@ -28,4 +28,3 @@ class Profil(models.Model):
 	avatar = models.ImageField(blank=True,upload_to="avatars/")
 	def __str__(self):
 		return "Profil de {0}".format(self.user.username)
-

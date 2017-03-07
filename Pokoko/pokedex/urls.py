@@ -1,4 +1,5 @@
 from django.conf.urls import url
+from django.contrib.auth import views as auth_views
 
 from . import views
 
@@ -10,6 +11,8 @@ urlpatterns = [
 
     url(r'^connexion/',views.connexion,name='connexion'),
     url(r'^deconnexion/', views.deconnexion, name='deconnexion'),
+    url(r'^inscription/',views.inscription,name='inscription'),
+   
 
     url(r'^addition/(?P<nb1>\d+)/(?P<nb2>\d+)/$',views.addition,name='addition'),
 
