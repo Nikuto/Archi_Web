@@ -43,7 +43,8 @@ def connexion(request):
             password = form.cleaned_data["password"]
             user = authenticate(username=username, password=password)#test de log
             if user:  # Si l'objet renvoyé n'est pas None
-                login(request, user,redirect_field_name='pokedex/index')  # nous connectons l'utilisateur
+                login(request, user)  # nous connectons l'utilisateur
+                return render(request, 'pokedex/acceuil.html', locals())
             else: # sinon une erreur sera affichée
                 error = True
         else:
@@ -66,7 +67,7 @@ def inscription(request):
             User.objects.create_user(username,mail,password)
             user = authenticate(username=username, password=password)
             if user:
-                login(request, user,redirect_field_name='pokedex/index')
+                login(request, user)
             else:
                 error = True
         else:
