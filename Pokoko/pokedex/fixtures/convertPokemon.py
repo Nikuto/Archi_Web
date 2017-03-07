@@ -23,7 +23,7 @@ def foreign_key_type(nom_type):
 	 	'Ténèbres':  17,
 	 	'Tenebres':  17,
 	 	'Vol':       18,
-		'': 
+		'': 0
 	}[nom_type]
 	 
 

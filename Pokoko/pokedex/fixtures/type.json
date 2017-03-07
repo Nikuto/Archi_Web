@@ -1,5 +1,12 @@
 [
 	{
+		"pk": 0,
+		"model": "pokedex.type",
+		"fields": {
+			"nom_type": "NULL"
+		}
+	},
+	{
 		"pk": 1,
 		"model": "pokedex.type",
 		"fields": {
