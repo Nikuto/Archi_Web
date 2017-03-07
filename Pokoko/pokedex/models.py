@@ -20,7 +20,6 @@ class Relation(models.Model):
 	type_defensif = models.ForeignKey(Type, related_name = 'type_defensif')
 	relation = models.FloatField(default = 1)
 	def __str__(self):
-<<<<<<< HEAD
 		return self.type_offensif + "/" + self.type_defensif
 
 class Profil(models.Model):
@@ -29,6 +28,3 @@ class Profil(models.Model):
 
 	def __str__(self):
 		return "Profil de {0}".format(self.user.username)
-=======
-		return str(self.type_offensif) + ' / ' + str(self.type_defensif)
->>>>>>> 51d7681f689fde5a7d337066ea97a6003b0db6cd

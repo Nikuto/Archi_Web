@@ -33,8 +33,13 @@
             <div class="col-sm-2">
             <div class="col-sm-2">
                 <ul classe="list-unstyled">
-                    <li><p>Connexion</p></li>
-                    <li><a href="{% url 'connexion' %}" ">S'inscrire</a></li>
+                  {% if user.is_authenticated %}
+                    <li><p>Salut {{ user.username }}</p></li>
+                    <li><a href="{% url 'deconnexion' %}">Se deconnecter</a></li>
+                  {% else %}
+                    <li><a href="{% url 'connexion' %}">Connexion</a></li>
+                    <li><a href="{% url 'inscription' %}">S'inscrire</a></li>
+                  {% endif %}
                 </ul>
             </div>
             </div>
