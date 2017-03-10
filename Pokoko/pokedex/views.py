@@ -5,9 +5,11 @@ from django.contrib.auth import authenticate, login, logout
 from django.core.urlresolvers import reverse
 from pokedex.forms import ConnexionForm
 from .models import Pokemon
+from .models import Type
 from pokedex.forms import ConnexionForm,InscriptionForm
 from django.contrib.auth.models import User
 from django.shortcuts import redirect
+from django.utils.text import slugify
 
 #Page d'accueil, a la racine du site
 def index(request):
@@ -76,13 +78,32 @@ def inscription(request):
             form = InscriptionForm()
     return render(request,'pokedex/inscription.html',locals())
 
-def pokemon(request, nomPokemon):
-    pokemon = Pokemon.objects.get(nom_pokemon = nomPokemon)
+def pokemon_details_nom(request, nom_poke):
+    pokemon = Pokemon.objects.get(nom_pokemon__iexact = nom_poke)
+    print(nom_poke)
+    print(pokemon)
     type_pokemon = []
     for type in pokemon.type_pokemon.all():
         type_pokemon.append(type.nom_type)
+
+    if len(type_pokemon) > 1:
+        type1 = type_pokemon[0]
+        type2 = type_pokemon[1]
     return render(request, 'pokedex/pokemon.html', 
-        {'pokemon' : pokemon, 'type': type_pokemon})
+        {'pokemon' : pokemon, 'type1': type1, 'type2': type2})
+
+def pokemon_details_numero(request, numero_poke):
+    pokemon = Pokemon.objects.get(numero_pokemon = numero_poke)
+    type_pokemon = []
+    for type in pokemon.type_pokemon.all():
+        type_pokemon.append(type.nom_type)
+    if len(type_pokemon) > 1:
+        type1 = type_pokemon[0]
+        type2 = type_pokemon[1]
+    return render(request, 'pokedex/pokemon.html', 
+        {'pokemon' : pokemon, 'type1': type1, 'type2': type2})
+
+
 
 
 

@@ -14,11 +14,7 @@ urlpatterns = [
     url(r'^connexion/',views.connexion,name='connexion'),
     url(r'^deconnexion/', views.deconnexion, name='deconnexion'),
     url(r'^inscription/',views.inscription,name='inscription'),
-   
 
-    url(r'^addition/(?P<nb1>\d+)/(?P<nb2>\d+)/$',views.addition,name='addition'),
-
-    
-    url(r'^pokemon/',views.pokemon,name='pokemon'),
+    url(r'^pokemon/(?P<nom_poke>[A-Za-z0-9-]+)/$',views.pokemon_details_nom,name='pokemon_details_nom'),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
