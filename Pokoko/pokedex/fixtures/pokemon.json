@@ -83,6 +83,7 @@
             "cout_pokemon": "3",
             "generation_pokemon": "1",
             "numero_pokemon": "6",
+            "image_pokemon": "006.png",
             "type_pokemon": [
                 7,
                 18

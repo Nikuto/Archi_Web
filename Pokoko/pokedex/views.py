@@ -75,7 +75,15 @@ def inscription(request):
             form = InscriptionForm()
     return render(request,'pokedex/inscription.html',locals())
 
-def pokemon(request):
-    pokemon = Pokemon.objects.get(nom_pokemon = "Dracaufeu")
-    return render(request, 'test/pokemon.html', 
-        {'pokemon' : pokemon})
+def pokemon(request, nomPokemon):
+    pokemon = Pokemon.objects.get(nom_pokemon = nomPokemon)
+    type_pokemon = []
+    for type in pokemon.type_pokemon.all():
+        type_pokemon.append(type.nom_type)
+    return render(request, 'pokedex/pokemon.html', 
+        {'pokemon' : pokemon, 'type': type_pokemon})
+
+
+
+
+

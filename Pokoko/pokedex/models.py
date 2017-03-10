@@ -12,7 +12,7 @@ class Pokemon(models.Model):
 	generation_pokemon = models.IntegerField(default = 0)
 	type_pokemon = models.ManyToManyField(Type, blank=False)
 	cout_pokemon = models.IntegerField(default = 0)
-	image_pokemon = models.ImageField()
+	image_pokemon = models.FileField(upload_to='pokemon')
 	def __str__(self):
 		return self.nom_pokemon
 
