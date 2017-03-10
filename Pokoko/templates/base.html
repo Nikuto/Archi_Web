@@ -22,7 +22,7 @@
   <div class="container ">
     <div class="row">
 
-            <div class="col-sm-10">
+            <div class="col-sm-9">
               <div class="col-sm-2"><a href="{% url 'index' %}" ">Accueil</a></div>
               <div class="col-sm-2"><a href="{% url 'sommaire' %}">Sommaire</a></div>
               <div class="col-sm-2"><a href="{% url 'afficher_date' %}">Date</a></div>
@@ -30,26 +30,75 @@
               <div class="col-sm-2"><p>pkm 5 </p></div>
               <div class="col-sm-2"><p>pkm 6 </p></div>
             </div>
-            <div class="col-sm-2">
-            <div class="col-sm-2">
-                <ul classe="list-unstyled">
-                  {% if user.is_authenticated %}
-                    <li><p>Salut {{ user.username }}</p></li>
-                    <li><a href="{% url 'deconnexion' %}">Se deconnecter</a></li>
-                  {% else %}
-                    <li><a href="{% url 'connexion' %}">Connexion</a></li>
-                    <li><a href="{% url 'inscription' %}">S'inscrire</a></li>
-                  {% endif %}
-                </ul>
-            </div>
+            <div class="col-sm-3">
+
+                {% if user.is_authenticated %}
+                <table >
+                    <tr>
+                    <td  rowspan=2 align=center >avatar</td>
+                    <td%><p>Salut {{ user.username }}</p></td>
+                    </tr>
+                    <tr>
+                    <td><a href="{% url 'deconnexion' %}">Se deconnecter</a></td>
+                    </tr>
+                </table>
+                {% else %}
+                <table>
+                    <tr>
+                    <td rowspan=2 align=center>avatar</td>
+                    <td><a href="{% url 'connexion' %}">Connexion</a></td>
+                    </tr>
+                    <tr>
+                    <td ><a href="{% url 'inscription' %}">S'inscrire</a></td>
+                    </tr>
+                </table>
+                {% endif %}
             </div>
     </div>
   </div>
 
+
+
     <div class="row">
 
       <div class="col-sm-3 accueil-colonne-recherche">
-      <h2> colonne de recherche </h2>
+      <form method="post" action="recherche">
+        <table>
+            <tr><center><h2>Recherche</h2></center></tr>
+            <tr>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Nom du pokemon">
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button">Go!</button>
+                    </span>
+                </div>
+            </tr>
+            <tr>
+                 <div class="form-group">
+                  <label for="type">Premier type</label>
+                  <select class="form-control" id="type">
+                    <option>Type</option>
+                    <option>Feu</option>
+                    <option>Eau</option>
+                    <option>Terre</option>
+                    <option>Air</option>
+                  </select>
+                </div>
+            </tr>
+            <tr>
+                <div class="form-group">
+                  <label for="type">Second type</label>
+                  <select class="form-control" id="type">
+                    <option>Type</option>
+                    <option>Feu</option>
+                    <option>Eau</option>
+                    <option>Terre</option>
+                    <option>Air</option>
+                  </select>
+                </div>
+            </tr>
+        </table>        
+      </form>
       </div>
 
       <div class="col-sm-9">
