@@ -1,3 +1,4 @@
+{% load pokedex_extra %}
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -62,42 +63,16 @@
     <div class="row">
 
       <div class="col-sm-3 accueil-colonne-recherche">
-      <form method="post" action="recherche">
-        <table>
-            <tr><center><h2>Recherche</h2></center></tr>
-            <tr>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Nom du pokemon">
-                    <span class="input-group-btn">
-                        <button class="btn btn-secondary" type="button">Go!</button>
-                    </span>
-                </div>
-            </tr>
-            <tr>
-                 <div class="form-group">
-                  <label for="type">Premier type</label>
-                  <select class="form-control" id="type">
-                    <option>Type</option>
-                    <option>Feu</option>
-                    <option>Eau</option>
-                    <option>Terre</option>
-                    <option>Air</option>
-                  </select>
-                </div>
-            </tr>
-            <tr>
-                <div class="form-group">
-                  <label for="type">Second type</label>
-                  <select class="form-control" id="type">
-                    <option>Type</option>
-                    <option>Feu</option>
-                    <option>Eau</option>
-                    <option>Terre</option>
-                    <option>Air</option>
-                  </select>
-                </div>
-            </tr>
-        </table>        
+
+      {% load bootstrap3 %}
+      {% recherche_form "" as form %}
+      <form method="post" action="pokemon" class="form">
+        {% bootstrap_form form %}
+        {% buttons %}
+          <button type="submit" class="btn btn-primary">
+            {% bootstrap_icon "star" %} Je te choisis !
+          </button>
+        {% endbuttons %}      
       </form>
       </div>
 

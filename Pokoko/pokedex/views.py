@@ -77,6 +77,21 @@ def inscription(request):
     return render(request,'pokedex/inscription.html',locals())
 
 def pokemon(request):
-    pokemon = Pokemon.objects.get(nom_pokemon = "Dracaufeu")
-    return render(request, 'test/pokemon.html', 
-        {'pokemon' : pokemon})
+    error = False
+    if(request.method == "POST"):
+        form = PokemonSearch(request.POST)
+        if form.if_valid():
+            nom_pokemon = form.clean_data["nom"]
+            pokemon = Pokemon.objects.get("nom_pokemon")
+            return render(request, 'test/pokemon.html', {'pokemon' : pokemon})
+        else:
+            error = True
+    else :
+        form = PokemonSearch()
+    return render(request,'pokedex/accueil.html',{"form":form})
+
+
+
+
+
+
