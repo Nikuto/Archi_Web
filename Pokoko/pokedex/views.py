@@ -48,7 +48,7 @@ def connexion(request):
             user = authenticate(username=username, password=password)#test de log
             if user:  # Si l'objet renvoyé n'est pas None
                 login(request, user)  # nous connectons l'utilisateur
-                return render(request, 'pokedex/acceuil.html', locals())
+                return render(request, 'pokedex/accueil.html', locals())
             else: # sinon une erreur sera affichée
                 error = True
         else:
@@ -78,14 +78,36 @@ def inscription(request):
             form = InscriptionForm()
     return render(request,'pokedex/inscription.html',locals())
 
-def pokemon(request):
+def filtre(request):
+    error = False
+    if(request.method == "POST"):
+        form = FiltreSearch(request.POST)
+        if form.if_valid():
+            nom_pokemon = form.clean_data["nom"]
+            pokemon = Pokemon.objects.get("nom_pokemon")
+            return render(request, 'test/pokemon.html', {'pokemon' : pokemon})
+        else:
+            error = True
+    else :
+        form = FiltreSearch()
+    return render(request,'pokedex/accueil.html',{"form":form})
+
+def find(request):
     error = False
     if(request.method == "POST"):
         form = PokemonSearch(request.POST)
         if form.if_valid():
             nom_pokemon = form.clean_data["nom"]
-            pokemon = Pokemon.objects.get("nom_pokemon")
-            return render(request, 'test/pokemon.html', {'pokemon' : pokemon})
+            pokemon = Pokemon.objects.get(nom_pokemon__iexact = nom_pokemon)
+            if(1):
+                for type in pokemon.type_pokemon.all():
+                    type_pokemon.append(type.nom_type)
+                if len(type_pokemon) > 1:
+                    type1 = type_pokemon[0]
+                    type2 = type_pokemon[1]
+                    return render(request, 'pokedex/pokemon.html', {'pokemon' : pokemon, 'type1': type1, 'type2': type2})
+                else:
+                    return render(request,'pokedex/accueil.html',{"form":form})
         else:
             error = True
     else :

@@ -14,6 +14,8 @@ urlpatterns = [
     url(r'^connexion/',views.connexion,name='connexion'),
     url(r'^deconnexion/', views.deconnexion, name='deconnexion'),
     url(r'^inscription/',views.inscription,name='inscription'),
+    url(r'^find/',views.find,name='find'),
+    url(r'^filtre/',views.filtre,name='filtre'),
 
     url(r'^pokedex/(?P<nom_poke>.+)/$',views.pokemon_details_nom,name='pokemon_details_nom'),
     url(r'^pokedex/$',views.pokedex,name='pokedex'),
