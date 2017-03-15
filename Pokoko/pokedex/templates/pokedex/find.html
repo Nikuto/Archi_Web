@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Pokemon{% endblock %}
+
+{% block content %}
+
+<div>{{pokemon.nom_pokemon}}</div>
+
+<img src={{pokemon.image_pokemon.url}}>
+<div>Numéro : {{pokemon.numero_pokemon}}</div>
+<div>Type : {% ifnotequal type1 'NULL' %} {{type1}} {% endifnotequal %} {% ifnotequal type2 'NULL' %} {{type2}} {% endifnotequal %} </div>
+<div>Generation : {{pokemon.generation_pokemon}}</div>
+<div>Cout : {% ifequal pokemon.cout_pokemon -1%} BAN {%else%} {{pokemon.cout_pokemon}} {% endifequal %}</div>
+
+{% endblock %}
