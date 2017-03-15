@@ -3,13 +3,23 @@
 {% block title %}Pokemon{% endblock %}
 
 {% block content %}
+{% block pokemon %}
 
-<div>{{pokemon.nom_pokemon}}</div>
+<div>
+	<div>{{pokemon.nom_pokemon}}</div>
 
-<img src={{pokemon.image_pokemon.url}}>
-<div>Numéro : {{pokemon.numero_pokemon}}</div>
-<div>Type : {% ifnotequal type1 'NULL' %} {{type1}} {% endifnotequal %} {% ifnotequal type2 'NULL' %} {{type2}} {% endifnotequal %} </div>
-<div>Generation : {{pokemon.generation_pokemon}}</div>
-<div>Cout : {% ifequal pokemon.cout_pokemon -1%} BAN {%else%} {{pokemon.cout_pokemon}} {% endifequal %}</div>
+	<img src={{pokemon.image_pokemon.url}}>
+	<div>Numéro : {{pokemon.numero_pokemon}}</div>
+	<div>Type : 
+		{%for type in pokemon.type_pokemon.all %}
+			{% ifnotequal type.nom_type 'NULL' %}
+				{{type.nom_type}}
+			{% endifnotequal %}
+		{% endfor %}
+	</div>
+	<div>Generation : {{pokemon.generation_pokemon}}</div>
+	<div>Cout : {% ifequal pokemon.cout_pokemon -1%} BAN {%else%} {{pokemon.cout_pokemon}} {% endifequal %}</div>
+<div>
 
+{% endblock %}
 {% endblock %}

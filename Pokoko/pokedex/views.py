@@ -91,34 +91,22 @@ def pokemon(request):
     else :
         form = PokemonSearch()
     return render(request,'pokedex/accueil.html',{"form":form})
+
 def pokemon_details_nom(request, nom_poke):
     pokemon = Pokemon.objects.get(nom_pokemon__iexact = nom_poke)
-    print(nom_poke)
     print(pokemon)
-    type_pokemon = []
-    for type in pokemon.type_pokemon.all():
-        type_pokemon.append(type.nom_type)
-
-    if len(type_pokemon) > 1:
-        type1 = type_pokemon[0]
-        type2 = type_pokemon[1]
     return render(request, 'pokedex/pokemon.html', 
-        {'pokemon' : pokemon, 'type1': type1, 'type2': type2})
+        {'pokemon' : pokemon})
 
 def pokemon_details_numero(request, numero_poke):
     pokemon = Pokemon.objects.get(numero_pokemon = numero_poke)
     type_pokemon = []
-    for type in pokemon.type_pokemon.all():
-        type_pokemon.append(type.nom_type)
-    if len(type_pokemon) > 1:
-        type1 = type_pokemon[0]
-        type2 = type_pokemon[1]
     return render(request, 'pokedex/pokemon.html', 
-        {'pokemon' : pokemon, 'type1': type1, 'type2': type2})
+        {'pokemon' : pokemon})
 
 def pokedex(request):
-    pokedex = Pokemon.objects.all()
-    return render(request, 'pokedex/pokedex.html',
+    pokedex = Pokemon.objects.filter(generation_pokemon = 1)
+    return render(request, 'pokedex/pokemon_dex.html',
                     {'pokemon': pokedex})
 
 

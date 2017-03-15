@@ -1,7 +1,13 @@
-{% extends "base.html" %}
+{% extends "pokemon.html" %}
 
 {% block title %}Pokedex{% endblock %}
 
 {% block content %}
+
+	{% for pokemon in pokemon %}
+    	{% block pokemon %}
+    		<div> {{ block.super }} </div>
+    	{% endblock %}
+    {% endfor %}
 
 {% endblock %}
