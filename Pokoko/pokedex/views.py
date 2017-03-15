@@ -103,7 +103,10 @@ def pokemon_details_numero(request, numero_poke):
     return render(request, 'pokedex/pokemon.html', 
         {'pokemon' : pokemon, 'type1': type1, 'type2': type2})
 
-
+def pokedex(request):
+    pokedex = Pokemon.objects.all()
+    return render(request, 'pokedex/pokedex.html',
+                    {'pokemon': pokedex})
 
 
 
