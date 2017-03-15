@@ -72,7 +72,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Pokoko.wsgi.application'
 
 #Chemin pour les images
-MEDIA_ROOT = './pokedex/images/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 
 # Database

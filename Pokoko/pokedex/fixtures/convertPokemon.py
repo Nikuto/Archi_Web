@@ -25,7 +25,15 @@ def foreign_key_type(nom_type):
 	 	'Vol':       18,
 		'': 0
 	}[nom_type]
-	 
+	
+
+def nom_image(num_poke):
+	if(int(num_poke) < 10):
+		return ('00' + str(num_poke) + '.png')
+	elif(int(num_poke) < 100):
+		return ('0' + str(num_poke) + '.png')
+	else:
+		return (str(num_poke) + '.png')
 
 
 
@@ -44,6 +52,7 @@ for value in pokedex_data["values"]:
 			"nom_pokemon": value[1],
 			"generation_pokemon": value[2],
 			"type_pokemon": [foreign_key_type(value[3]), foreign_key_type(value[4])],
+			"image_pokemon": nom_image(value[0]),
 			"cout_pokemon": value[5]
 		}
 	})

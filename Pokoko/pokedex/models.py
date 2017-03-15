@@ -12,7 +12,7 @@ class Pokemon(models.Model):
 	generation_pokemon = models.IntegerField(default = 0)
 	type_pokemon = models.ManyToManyField(Type, blank=False)
 	cout_pokemon = models.IntegerField(default = 0)
-	image_pokemon = models.ImageField()
+	image_pokemon = models.FileField(upload_to='pokemon')
 	def __str__(self):
 		return self.nom_pokemon
 
@@ -26,5 +26,6 @@ class Relation(models.Model):
 class Profil(models.Model):
 	user = models.OneToOneField(User)
 	avatar = models.ImageField(blank=True,upload_to="avatars/")
+	pokemon_equipe = models.ManyToManyField(Pokemon, blank = True)
 	def __str__(self):
 		return "Profil de {0}".format(self.user.username)
