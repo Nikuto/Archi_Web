@@ -20,4 +20,4 @@ redis
 dump.rdb
 db.sqlite3
 Pokoko/Pokoko/__pycache__/
-Pokoko/Pokoko/migrations/
+Pokoko/pokedex/migrations/
