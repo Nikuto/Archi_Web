@@ -78,7 +78,6 @@ def inscription(request):
             form = InscriptionForm()
     return render(request,'pokedex/inscription.html',locals())
 
-<<<<<<< HEAD
 def pokemon(request):
     error = False
     if(request.method == "POST"):
@@ -92,7 +91,6 @@ def pokemon(request):
     else :
         form = PokemonSearch()
     return render(request,'pokedex/accueil.html',{"form":form})
-=======
 def pokemon_details_nom(request, nom_poke):
     pokemon = Pokemon.objects.get(nom_pokemon__iexact = nom_poke)
     print(nom_poke)
@@ -118,7 +116,6 @@ def pokemon_details_numero(request, numero_poke):
     return render(request, 'pokedex/pokemon.html', 
         {'pokemon' : pokemon, 'type1': type1, 'type2': type2})
 
->>>>>>> 074b68bdbfa38f5698352936f866c76f516e5f05
 
 
 
