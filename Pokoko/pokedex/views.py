@@ -3,14 +3,16 @@ from django.http import HttpResponse
 from datetime import datetime
 from django.contrib.auth import authenticate, login, logout
 from django.core.urlresolvers import reverse
-from pokedex.forms import ConnexionForm
 from .models import Pokemon
 from .models import Type
 from .models import Relation
-from pokedex.forms import ConnexionForm,InscriptionForm
+from pokedex.forms import *
 from django.contrib.auth.models import User
 from django.shortcuts import redirect
 from django.utils.text import slugify
+from django.views.decorators.csrf import csrf_protect
+from django.core.exceptions import ObjectDoesNotExist
+ 
 
 #Page d'accueil, a la racine du site
 def index(request):
@@ -49,7 +51,7 @@ def connexion(request):
             user = authenticate(username=username, password=password)#test de log
             if user:  # Si l'objet renvoyé n'est pas None
                 login(request, user)  # nous connectons l'utilisateur
-                return render(request, 'pokedex/accueil.html', locals())
+                return redirect('index')
             else: # sinon une erreur sera affichée
                 error = True
         else:
@@ -68,7 +70,10 @@ def inscription(request):
         if form.is_valid():
             username = form.cleaned_data["username"]
             password = form.cleaned_data["password"]
+            passwordve = form.cleaned_data["passwordVerif"]
             mail = form.cleaned_data["mail"]
+            if(password != passwordve):
+                return redirect('index')
             User.objects.create_user(username,mail,password)
             user = authenticate(username=username, password=password)
             if user:
@@ -81,39 +86,58 @@ def inscription(request):
 
 def filtre(request):
     error = False
+    nb=0
     if(request.method == "POST"):
-        form = FiltreSearch(request.POST)
-        if form.if_valid():
-            nom_pokemon = form.clean_data["nom"]
-            pokemon = Pokemon.objects.get("nom_pokemon")
-            return render(request, 'test/pokemon.html', {'pokemon' : pokemon})
+
+        form = FiltreForm(request.POST)
+        if form.is_valid():
+
+
+            type1= form.cleaned_data["typeun"]
+            type2= form.cleaned_data["typedeux"]
+
+
+            if(type2 !="Type"):
+                nb += 1
+
+            if(type1 != "Type"):
+                nb += 1
+            if(type1 == "Type" and nb):
+                type1=type2
+
+
+            if(nb == 0):
+                return redirect('index')
+            if(nb == 1):
+                pokedex = Pokemon.objects.filter(type_pokemon=type1).all()
+                return render(request, 'pokedex/pokemon_dex.html', {'pokemon': pokedex})
+            if(nb == 1):
+                pokedex = Pokemon.objects.filter(type_pokemon__in[type1,type2]).all()
+                return render(request, 'pokedex/pokemon_dex.html', {'pokemon': pokedex})
+        
         else:
             error = True
+    
     else :
-        form = FiltreSearch()
-    return render(request,'pokedex/accueil.html',{"form":form})
+        form = FiltreForm()
+    
+    return redirect('index')
 
 def find(request):
     error = False
+    type_pokemon = []
     if(request.method == "POST"):
-        form = PokemonSearch(request.POST)
-        if form.if_valid():
-            nom_pokemon = form.clean_data["nom"]
-            pokemon = Pokemon.objects.get(nom_pokemon__iexact = nom_pokemon)
-            if(1):
-                for type in pokemon.type_pokemon.all():
-                    type_pokemon.append(type.nom_type)
-                if len(type_pokemon) > 1:
-                    type1 = type_pokemon[0]
-                    type2 = type_pokemon[1]
-                    return render(request, 'pokedex/pokemon.html', {'pokemon' : pokemon, 'type1': type1, 'type2': type2})
-                else:
-                    return render(request,'pokedex/accueil.html',{"form":form})
+        form = PokemonForm(request.POST)
+        if form.is_valid():
+            nom = form.cleaned_data["nom"]
+            try:
+                pokemon = Pokemon.objects.get(nom_pokemon__iexact = nom)
+                return redirect('pokemon_details_nom',nom_poke=nom)
+            except ObjectDoesNotExist as e:
+                return redirect('index')
         else:
-            error = True
-    else :
-        form = PokemonSearch()
-    return render(request,'pokedex/accueil.html',{"form":form})
+            form = PokemonForm()
+    return redirect('index')
 
 
 def type_to_key(nom_type):

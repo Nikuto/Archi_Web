@@ -67,7 +67,7 @@
       <a href="/pokedex/">Tout le pokédex</a>
       {% load bootstrap3 %}
       {% recherche_pok "" as form1 %}
-      <form method="post" action="find" class="form">
+      <form method="post" action="{% url 'find' %}" class="form">{% csrf_token %}
       {% bootstrap_form form1 %}
         {% buttons %}
             <button type="submit" class="btn btn-primary">
@@ -77,7 +77,7 @@
       
       </form>
       {% recherche_form "" as form2 %}
-      <form method="post" action="filtre" class="form">
+      <form method="post" action="{% url 'filtre' %}" class="form">{% csrf_token %}
         {% bootstrap_form form2 %}
         {% buttons %}
           <button type="submit" class="btn btn-primary">

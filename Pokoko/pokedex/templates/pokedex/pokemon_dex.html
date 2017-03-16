@@ -4,11 +4,23 @@
 
 {% block content %}
 
-	<table>
-		{% for pokemon in pokemon %}
-	    	{% block pokemon %}
-	    		 <tr> {{ block.super }} </tr>
-	    	{% endblock %}
-	    {% endfor %}
-    </table>
+	<div class="container-fluid">
+		<div class="row">
+		    <div class="row-same-height">
+			{% for pokemon in pokemon %}
+		
+		        <div class="col-xs-4 col-xs-height col-full-height">
+		        	<div class="pokemon"><div class="content">
+		        	{% block pokemon %}
+			    		 {{ block.super }}
+			    	{% endblock %}
+			    	</div></div>
+			    </div>
+			{% endfor %}
+		   	</div>
+		</div>
+
+	
+    </div>
+
 {% endblock %}

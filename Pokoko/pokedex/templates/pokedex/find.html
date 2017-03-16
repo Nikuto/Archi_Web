@@ -1,15 +1,38 @@
 {% extends "base.html" %}
 
-{% block title %}Pokemon{% endblock %}
+{% block title %}Pokemon - {{pokemon.nom_pokemon}}{% endblock %}
 
 {% block content %}
+{% block pokemon %}
 
-<div>{{pokemon.nom_pokemon}}</div>
+<div>
+	<span>{{pokemon.numero_pokemon}}.</span>	
+	<span><a href="/pokedex/{{pokemon.nom_pokemon}}/">{{pokemon.nom_pokemon}}</a></span>
+	<span><img src={{pokemon.image_pokemon.url}}></span>
+	<span>
+		{%for type in pokemon.type_pokemon.all %}
+			{% ifnotequal type.nom_type 'NULL' %}
+				{{type.nom_type}}
+			{% endifnotequal %}
+		{% endfor %}
+	</span>
+	<span>Generation {{pokemon.generation_pokemon}}
+	<!-- {% ifequal pokemon.cout_pokemon -1%} BAN {%else%} {{pokemon.cout_pokemon}} {% endifequal %} -->
+</div>
 
-<img src={{pokemon.image_pokemon.url}}>
-<div>Numéro : {{pokemon.numero_pokemon}}</div>
-<div>Type : {% ifnotequal type1 'NULL' %} {{type1}} {% endifnotequal %} {% ifnotequal type2 'NULL' %} {{type2}} {% endifnotequal %} </div>
-<div>Generation : {{pokemon.generation_pokemon}}</div>
-<div>Cout : {% ifequal pokemon.cout_pokemon -1%} BAN {%else%} {{pokemon.cout_pokemon}} {% endifequal %}</div>
+{% endblock %}
 
+<div>
+	<h3>Balance Défensive</h1>
+	<table>
+		{%for type in balance%}
+			<tr>
+				<td>{{type.type_offensif}} :</td>
+				<td>x{{type.relation}}</td>
+			</tr>
+			
+	{% endfor%}
+	</table>
+	
+</div>
 {% endblock %}
