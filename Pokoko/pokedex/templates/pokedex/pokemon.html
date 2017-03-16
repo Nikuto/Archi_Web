@@ -23,11 +23,12 @@
 {% endblock %}
 
 <div>
+	<h3>Balance Défensive</h1>
 	<table>
 		{%for type in balance%}
 			<tr>
-				<td>{{type.type_offensif}} : </td>
-				<td>{{type.relation}}</td>
+				<td>{{type.type_offensif}} :</td>
+				<td>x{{type.relation}}</td>
 			</tr>
 			
 	{% endfor%}
