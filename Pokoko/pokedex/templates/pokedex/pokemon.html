@@ -1,13 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}Pokemon{% endblock %}
+{% block title %}Pokemon - {{pokemon.nom_pokemon}}{% endblock %}
 
 {% block content %}
 {% block pokemon %}
 
 <div>
-	<div>{{pokemon.nom_pokemon}}</div>
-
+	<a href="/pokedex/{{pokemon.nom_pokemon}}/">{{pokemon.nom_pokemon}}</a>
 	<img src={{pokemon.image_pokemon.url}}>
 	<div>Numéro : {{pokemon.numero_pokemon}}</div>
 	<div>Type : 
@@ -22,4 +21,6 @@
 <div>
 
 {% endblock %}
+
+
 {% endblock %}

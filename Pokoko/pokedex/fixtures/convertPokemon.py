@@ -28,12 +28,8 @@ def foreign_key_type(nom_type):
 	
 
 def nom_image(num_poke):
-	if(int(num_poke) < 10):
-		return ('00' + str(num_poke) + '.png')
-	elif(int(num_poke) < 100):
-		return ('0' + str(num_poke) + '.png')
-	else:
-		return (str(num_poke) + '.png')
+	return (str(num_poke) + '.png')
+	
 
 
 
