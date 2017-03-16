@@ -4,10 +4,11 @@
 
 {% block content %}
 
-	{% for pokemon in pokemon %}
-    	{% block pokemon %}
-    		<div> {{ block.super }} </div>
-    	{% endblock %}
-    {% endfor %}
-
+	<table>
+		{% for pokemon in pokemon %}
+	    	{% block pokemon %}
+	    		 <tr> {{ block.super }} </tr>
+	    	{% endblock %}
+	    {% endfor %}
+    </table>
 {% endblock %}

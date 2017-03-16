@@ -6,6 +6,7 @@ from django.core.urlresolvers import reverse
 from pokedex.forms import ConnexionForm
 from .models import Pokemon
 from .models import Type
+from .models import Relation
 from pokedex.forms import ConnexionForm,InscriptionForm
 from django.contrib.auth.models import User
 from django.shortcuts import redirect
@@ -114,22 +115,68 @@ def find(request):
         form = PokemonSearch()
     return render(request,'pokedex/accueil.html',{"form":form})
 
+
+def type_to_key(nom_type):
+    return{
+        'Acier':     1,
+        'Combat':    2,
+        'Dragon':    3,
+        'Eau':       4,
+        'Electrik':  5,
+        'Fée':       6,
+        'Fee':       6,
+        'Feu':       7,
+        'Glace':     8,
+        'Insecte':   9,
+        'Normal':    10,
+        'Plante':    11,
+        'Poison':    12,
+        'Psy':       13,
+        'Roche':     14,
+        'Sol':       15,
+        'Spectre':   16,
+        'Ténèbres':  17,
+        'Tenebres':  17,
+        'Vol':       18,
+        '':           0,
+        'NULL':       0,
+    }[nom_type]
+
+
 def pokemon_details_nom(request, nom_poke):
     pokemon = Pokemon.objects.get(nom_pokemon__iexact = nom_poke)
     print(pokemon)
+    type_pokemon = []
+    for type in pokemon.type_pokemon.all():
+        type_pokemon.append(type.nom_type)
+    if len(type_pokemon) > 1:
+        type1 = type_pokemon[0]
+        type2 = type_pokemon[1]
+    type1_balance = Relation.objects.filter(type_defensif = type_to_key(type1))
+    type2_balance = Relation.objects.filter(type_defensif = type_to_key(type2))
+    balance = type1_balance
+    if type2 != 'NULL':
+        for type2, final in zip(type2_balance, balance):
+            final.relation = final.relation * type2.relation
     return render(request, 'pokedex/pokemon.html', 
-        {'pokemon' : pokemon})
+        {'pokemon' : pokemon, 'balance':balance})
 
 def pokemon_details_numero(request, numero_poke):
     pokemon = Pokemon.objects.get(numero_pokemon = numero_poke)
-    type_pokemon = []
     return render(request, 'pokedex/pokemon.html', 
         {'pokemon' : pokemon})
 
 def pokedex(request):
-    pokedex = Pokemon.objects.filter(generation_pokemon = 1)
+    pokedex = Pokemon.objects.filter(numero_pokemon__lte = 50)
     return render(request, 'pokedex/pokemon_dex.html',
                     {'pokemon': pokedex})
+
+
+
+
+
+
+
 
 
 

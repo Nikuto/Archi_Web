@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^pokedex/(?P<nom_poke>.+)/$',views.pokemon_details_nom,name='pokemon_details_nom'),
     url(r'^pokedex/$',views.pokedex,name='pokedex'),
 
+
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

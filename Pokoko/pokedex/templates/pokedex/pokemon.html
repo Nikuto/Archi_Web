@@ -6,21 +6,32 @@
 {% block pokemon %}
 
 <div>
-	<a href="/pokedex/{{pokemon.nom_pokemon}}/">{{pokemon.nom_pokemon}}</a>
-	<img src={{pokemon.image_pokemon.url}}>
-	<div>Numéro : {{pokemon.numero_pokemon}}</div>
-	<div>Type : 
+	<span>{{pokemon.numero_pokemon}}.</span>	
+	<span><a href="/pokedex/{{pokemon.nom_pokemon}}/">{{pokemon.nom_pokemon}}</a></span>
+	<span><img src={{pokemon.image_pokemon.url}}></span>
+	<span>
 		{%for type in pokemon.type_pokemon.all %}
 			{% ifnotequal type.nom_type 'NULL' %}
 				{{type.nom_type}}
 			{% endifnotequal %}
 		{% endfor %}
-	</div>
-	<div>Generation : {{pokemon.generation_pokemon}}</div>
-	<div>Cout : {% ifequal pokemon.cout_pokemon -1%} BAN {%else%} {{pokemon.cout_pokemon}} {% endifequal %}</div>
-<div>
+	</span>
+	<span>Generation {{pokemon.generation_pokemon}}
+	<!-- {% ifequal pokemon.cout_pokemon -1%} BAN {%else%} {{pokemon.cout_pokemon}} {% endifequal %} -->
+</div>
 
 {% endblock %}
 
-
+<div>
+	<table>
+		{%for type in balance%}
+			<tr>
+				<td>{{type.type_offensif}} : </td>
+				<td>{{type.relation}}</td>
+			</tr>
+			
+	{% endfor%}
+	</table>
+	
+</div>
 {% endblock %}
