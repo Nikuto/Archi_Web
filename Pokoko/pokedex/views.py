@@ -109,7 +109,8 @@ def filtre(request):
             if(nb == 0):
                 return redirect('index')
             if(nb == 1):
-                pokedex = Pokemon.objects.filter(type_pokemon=type1).all()
+                print(type1)
+                pokedex = Pokemon.objects.filter(type_pokemon = type_to_key(type1))
                 return render(request, 'pokedex/pokemon_dex.html', {'pokemon': pokedex})
             if(nb == 1):
                 pokedex = Pokemon.objects.filter(type_pokemon__in[type1,type2]).all()
@@ -174,11 +175,11 @@ def pokemon_details_nom(request, nom_poke):
     for type in pokemon.type_pokemon.all():
         type_pokemon.append(type.nom_type)
     type1_balance = Relation.objects.filter(type_defensif = type_to_key(type_pokemon[0]))
-    balance = type1_balance
-    if type_pokemon[1] != 'NULL':
-        type2_balance = Relation.objects.filter(type_defensif = type_to_key(type_pokemon[1]))
-        for type2, final in zip(type2_balance, balance):
-            final.relation = final.relation * type2.relation
+    type2_balance = Relation.objects.filter(type_defensif = type_to_key(type_pokemon[1]))
+    balance = type2_balance
+    if type_pokemon[0] != 'NULL':
+        for type1, final in zip(type1_balance, balance):
+            final.relation = final.relation * type1.relation
     return render(request, 'pokedex/pokemon.html', 
         {'pokemon' : pokemon, 'balance':balance})
 

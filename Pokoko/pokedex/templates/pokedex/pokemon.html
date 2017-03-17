@@ -16,22 +16,21 @@
 			{% endifnotequal %}
 		{% endfor %}
 	</span>
-	<span>Generation {{pokemon.generation_pokemon}}
 	<!-- {% ifequal pokemon.cout_pokemon -1%} BAN {%else%} {{pokemon.cout_pokemon}} {% endifequal %} -->
 </div>
 
 {% endblock %}
 
 <div>
+	<span>Generation {{pokemon.generation_pokemon}}</span>
 	<h3>Balance Défensive</h1>
 	<table>
 		{%for type in balance%}
 			<tr>
 				<td>{{type.type_offensif}} :</td>
 				<td>x{{type.relation}}</td>
-			</tr>
-			
-	{% endfor%}
+			</tr>			
+		{% endfor%}
 	</table>
 	
 </div>
