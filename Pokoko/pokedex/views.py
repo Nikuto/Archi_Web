@@ -12,6 +12,7 @@ from django.shortcuts import redirect
 from django.utils.text import slugify
 from django.views.decorators.csrf import csrf_protect
 from django.core.exceptions import ObjectDoesNotExist
+from django.db.models import Q
  
 
 #Page d'accueil, a la racine du site
@@ -86,17 +87,27 @@ def inscription(request):
 
 def filtre(request):
     error = False
-    nb=0
+    nb=False
     if(request.method == "POST"):
 
         form = FiltreForm(request.POST)
         if form.is_valid():
 
             type1 = form.cleaned_data["typeun"]
-            type2 = form.cleaned_data["typedeux"]
+            gen = form.cleaned_data["gen"]
 
-            if(type1 != "Type"):
-                pokedex = Pokemon.objects.filter(type_pokemon = type1)
+            pokedex = Pokemon.objects.all()
+
+            if type1 != "-1":
+                pokedex = pokedex.filter(type_pokemon = type1)
+                print(type1)
+                nb = True
+            if(gen != "-1"):
+                print(gen)
+                pokedex = pokedex.filter(generation_pokemon = gen)
+                nb = True
+
+            if(nb):
                 return render(request, 'pokedex/pokemon_dex.html', {'pokemon': pokedex})
 
         else:
