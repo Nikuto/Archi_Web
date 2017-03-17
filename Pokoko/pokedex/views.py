@@ -96,7 +96,6 @@ def filtre(request):
             type1= form.cleaned_data["typeun"]
             type2= form.cleaned_data["typedeux"]
 
-
             if(type2 !="Type"):
                 nb += 1
 
@@ -110,11 +109,11 @@ def filtre(request):
                 return redirect('index')
             if(nb == 1):
                 print(type1)
-                pokedex = Pokemon.objects.filter(type_pokemon = type_to_key(type1))
+                pokedex = Pokemon.objects.filter(type_pokemon = type1)
                 return render(request, 'pokedex/pokemon_dex.html', {'pokemon': pokedex})
-            if(nb == 1):
-                pokedex = Pokemon.objects.filter(type_pokemon__in[type1,type2]).all()
-                return render(request, 'pokedex/pokemon_dex.html', {'pokemon': pokedex})
+            # if(nb == 2):
+            #     pokedex = Pokemon.objects.filter(type_pokemon__in[type1,type2])
+            #     return render(request, 'pokedex/pokemon_dex.html', {'pokemon': pokedex})
         
         else:
             error = True
