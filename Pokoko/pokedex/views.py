@@ -12,6 +12,7 @@ from django.shortcuts import redirect
 from django.utils.text import slugify
 from django.views.decorators.csrf import csrf_protect
 from django.core.exceptions import ObjectDoesNotExist
+from django.db.models import Q
  
 
 #Page d'accueil, a la racine du site
@@ -86,40 +87,33 @@ def inscription(request):
 
 def filtre(request):
     error = False
-    nb=0
+    nb=False
     if(request.method == "POST"):
 
         form = FiltreForm(request.POST)
         if form.is_valid():
 
-
             type1 = form.cleaned_data["typeun"]
             type2 = form.cleaned_data["typedeux"]
+            gen = form.cleaned_data["gen"]
 
-            if(type1 != -1):
-                pokedex = Pokemon.objects.filter(type_pokemon = type1)
-                return render(request, 'pokedex/pokemon_dex.html', {'pokemon': pokedex})
+            pokedex = Pokemon.objects.all()
 
-            elif(type2 != -1):
-                pokedex = Pokemon.objects.filter(type_pokemon = type2)
-                return render(request, 'pokedex/pokemon_dex.html', {'pokemon': pokedex})
+            if (type1 != "-1"):
+                pokedex = pokedex.filter(type_pokemon = type1)
+                print(type1)
+                nb = True
+            if (type2 != "-1"):
+                pokedex = pokedex.filter(type_pokemon = type2)
+                print(type1)
+                nb = True
+            if(gen != "-1"):
+                print(gen)
+                pokedex = pokedex.filter(generation_pokemon = gen)
+                nb = True
 
+            if(nb):
 
-            
-
-            # if(type1 == "Type" and nb):
-            #     type1=type2
-
-
-            # if(nb == 0):
-            #     return redirect('index')
-            # if(nb == 1):
-            # print(type1)
-            # pokedex = Pokemon.objects.filter(type_pokemon = type1)
-            # if(nb == 2):
-            #      pokedex = Pokemon.objects.filter(type_pokemon__in[type1,type2]).all()
-            #      return render(request, 'pokedex/pokemon_dex.html', {'pokemon': pokedex})
-        
         else:
             error = True
     
@@ -130,7 +124,6 @@ def filtre(request):
 
 def find(request):
     error = False
-    type_pokemon = []
     if(request.method == "POST"):
         form = PokemonForm(request.POST)
         if form.is_valid():
