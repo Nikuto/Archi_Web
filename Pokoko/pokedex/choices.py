@@ -4,6 +4,6 @@ TYPE_CHOICES = (
 	(2,("Feu")),
 	(3,("Terre")),
 	(4,("Vol")),
-	(5,("Electricite")),
+	(5,("Electrik")),
 	(6,("Pierre")),
 )
