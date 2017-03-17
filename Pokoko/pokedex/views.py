@@ -94,12 +94,17 @@ def filtre(request):
         if form.is_valid():
 
             type1 = form.cleaned_data["typeun"]
+            type2 = form.cleaned_data["typedeux"]
             gen = form.cleaned_data["gen"]
 
             pokedex = Pokemon.objects.all()
 
-            if type1 != "-1":
+            if (type1 != "-1"):
                 pokedex = pokedex.filter(type_pokemon = type1)
+                print(type1)
+                nb = True
+            if (type2 != "-1"):
+                pokedex = pokedex.filter(type_pokemon = type2)
                 print(type1)
                 nb = True
             if(gen != "-1"):
