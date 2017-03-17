@@ -1,5 +1,5 @@
 TYPE_CHOICES = (
-	(0,("Type")),
+	(-1,("Type")),
 	(1,("Acier")),
 	(2,("Combat")),
 	(3,("Dragon")),
