@@ -125,7 +125,6 @@ def filtre(request):
 
 def find(request):
     error = False
-    type_pokemon = []
     if(request.method == "POST"):
         form = PokemonForm(request.POST)
         if form.is_valid():
