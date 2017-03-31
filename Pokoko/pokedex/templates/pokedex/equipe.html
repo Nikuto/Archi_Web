@@ -5,9 +5,15 @@
 {% block content %}
 
 	{% for pokemon in pokemon %}
-    	{% block pokemon %}
-    		<div class="col-sm-2"><p> {{ block.super }} </p></div>
-    	{% endblock %}
+		<div class="col-sm-2">
+    		{% block pokemon %}
+    			{{ block.super }} 
+    		{% endblock %}
+    		<div id="browse_app">
+  				<a class="btn btn-large btn-info" href="/supprimer/{{pokemon.nom_pokemon}}/">Supprimer</a>
+			</div>
+    	</div>
+    	
     {% endfor %}
 
 {% endblock %}

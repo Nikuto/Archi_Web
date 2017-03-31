@@ -196,25 +196,20 @@ def pokedex(request):
 
 
 def ajout(request,nom_poke):
-    
-
     user = User.objects.get(username=request.user.username)
-    user.profil.pokemon_equipe.add(Pokemon.objects.get(nom_pokemon__iexact = nom_poke))
-    user.save()
+    if(user.profil.pokemon_equipe.count() < 6):
+        user.profil.pokemon_equipe.add(Pokemon.objects.get(nom_pokemon__iexact = nom_poke))
+        user.save()
     return redirect('pokemon_details_nom',nom_poke=nom_poke);
     # if(User.is_authenticated):
     #     return HttpResponse("C {0}".format(Pokemon.objects.get(nom_pokemon__iexact = nom_poke)))
     # return HttpResponse("Salut, anonyme.")
 
 def equipe(request):
-    if(User.is_authenticated):
-        equipe = Profil.pokemon_equipe.all()
-        return render(request, 'pokedex/equipe.html',
+    user = User.objects.get(username=request.user.username)
+    equipe = user.profil.pokemon_equipe.all()
+    return render(request, 'pokedex/equipe.html',
                     {'pokemon': equipe})
-    return redirect('index')
-
-
-
 
 
 

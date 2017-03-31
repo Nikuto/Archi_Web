@@ -25,14 +25,13 @@
     <div class="row">
 
             <div class="col-sm-9">
-              <p>{% block equipe %}{% endblock %}</p>
+              <p><a href="/equipe/">Voir mon équipe</a>{% block equipe %}{% endblock %}</p>
             </div>
             <div class="col-sm-3">
 
                 {% if user.is_authenticated %}
                 <table >
                     <tr>
-                    <td  rowspan=2 align=center >avatar </td>
                     <td><p>Salut {{ user.username }}</p></td>
                     </tr>
                     <tr>
@@ -42,7 +41,6 @@
                 {% else %}
                 <table>
                     <tr>
-                    <td rowspan=2 align=center>avatar</td>
                     <td><a href="{% url 'connexion' %}">Connexion</a></td>
                     </tr>
                     <tr>
