@@ -213,7 +213,12 @@ def equipe(request):
                     {'pokemon': equipe})
     return redirect('index')
 
+def profil(request):
 
+    if(User.is_authenticated):
+        return render(request,'pokedex/profil.html')
+
+    return redirect('index')
 
 
 
