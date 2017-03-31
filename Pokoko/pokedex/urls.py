@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^inscription/',views.inscription,name='inscription'),
     url(r'^find/$',views.find,name='find'),
     url(r'^filtre/$',views.filtre,name='filtre'),
+    url(r'^ajout/(?P<nom_poke>.+)/$',views.ajout,name='ajout'),
 
     url(r'^pokedex/(?P<nom_poke>.+)/$',views.pokemon_details_nom,name='pokemon_details_nom'),
     url(r'^pokedex/$',views.pokedex,name='pokedex'),

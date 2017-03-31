@@ -3,25 +3,32 @@
 {% block title %}Pokemon - {{pokemon.nom_pokemon}}{% endblock %}
 
 {% block content %}
-{% block pokemon %}
 
-<div>
-	<span>{{pokemon.numero_pokemon}}.</span>	
-	<span><a href="/pokedex/{{pokemon.nom_pokemon}}/">{{pokemon.nom_pokemon}}</a></span>
-	<span><img src={{pokemon.image_pokemon.url}}></span>
-	<span>
-		{%for type in pokemon.type_pokemon.all %}
-			{% ifnotequal type.nom_type 'NULL' %}
-				{{type.nom_type}}
-			{% endifnotequal %}
-		{% endfor %}
-	</span>
-	<!-- {% ifequal pokemon.cout_pokemon -1%} BAN {%else%} {{pokemon.cout_pokemon}} {% endifequal %} -->
+<div class="col-sm-6">
+	{% block pokemon %}
+
+	<div>
+		<span>{{pokemon.numero_pokemon}}.</span>	
+		<span><a href="/pokedex/{{pokemon.nom_pokemon}}/">{{pokemon.nom_pokemon}}</a></span>
+		<span><img src={{pokemon.image_pokemon.url}}></span>
+		<span>
+			{%for type in pokemon.type_pokemon.all %}
+				{% ifnotequal type.nom_type 'NULL' %}
+					{{type.nom_type}}
+				{% endifnotequal %}
+			{% endfor %}
+		</span>
+		<!-- {% ifequal pokemon.cout_pokemon -1%} BAN {%else%} {{pokemon.cout_pokemon}} {% endifequal %} -->
+	</div>
+
+	{% endblock %}
+
+	<div id="browse_app">
+  		<a class="btn btn-large btn-info" href="/ajout/{{pokemon.nom_pokemon}}/">Ajouter</a>
+	</div>
 </div>
 
-{% endblock %}
-
-<div>
+<div class="col-sm-6">
 	<span>Generation {{pokemon.generation_pokemon}}</span>
 	<h3>Balance Défensive</h1>
 	<table>
@@ -34,4 +41,5 @@
 	</table>
 	
 </div>
+
 {% endblock %}

@@ -71,7 +71,7 @@ def inscription(request):
         if form.is_valid():
             username = form.cleaned_data["username"]
             password = form.cleaned_data["password"]
-            passwordve = form.cleaned_data["passwordVerif"]
+            passwordve = form.cleaned_data["passwordverif"]
             mail = form.cleaned_data["mail"]
             if(password != passwordve):
                 return redirect('index')
@@ -111,8 +111,8 @@ def filtre(request):
                 print(gen)
                 pokedex = pokedex.filter(generation_pokemon = gen)
                 nb = True
-
             if(nb):
+                return render(request, 'pokedex/pokemon_dex.html', {'pokemon': pokedex})
 
         else:
             error = True
@@ -190,6 +190,15 @@ def pokedex(request):
     return render(request, 'pokedex/pokemon_dex.html',
                     {'pokemon': pokedex})
 
+def ajout(request,nom_poke):
+    # if(0):
+    #     lala
+
+    # Profil.pokemon_equipe
+    # return redirect("pokedex/pokemon/"+nom_poke+"/");
+    if(User.is_authenticated):
+        return HttpResponse("Salut {0} ".format(Profil.get_username()))
+    return HttpResponse("Salut, anonyme.")
 
 
 
