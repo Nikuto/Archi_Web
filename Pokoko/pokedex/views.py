@@ -113,7 +113,6 @@ def filtre(request):
                 nb = True
             if(nb):
                 return render(request, 'pokedex/pokemon_dex.html', {'pokemon': pokedex})
-
         else:
             error = True
     
@@ -164,10 +163,7 @@ def type_to_key(nom_type):
         'NULL':       0,
     }[nom_type]
 
-
-def pokemon_details_nom(request, nom_poke):
-    pokemon = Pokemon.objects.get(nom_pokemon__iexact = nom_poke)
-    print(pokemon)
+def balance_pokemon(pokemon):
     type_pokemon = []
     for type in pokemon.type_pokemon.all():
         type_pokemon.append(type.nom_type)
@@ -177,6 +173,14 @@ def pokemon_details_nom(request, nom_poke):
     if type_pokemon[0] != 'NULL':
         for type1, final in zip(type1_balance, balance):
             final.relation = final.relation * type1.relation
+    return balance
+
+
+def pokemon_details_nom(request, nom_poke):
+    pokemon = Pokemon.objects.get(nom_pokemon__iexact = nom_poke)
+    print(pokemon)
+    type_pokemon = []
+    balance = balance_pokemon(pokemon)
     return render(request, 'pokedex/pokemon.html', 
         {'pokemon' : pokemon, 'balance':balance})
 
@@ -190,6 +194,7 @@ def pokedex(request):
     return render(request, 'pokedex/pokemon_dex.html',
                     {'pokemon': pokedex})
 
+
 def ajout(request,nom_poke):
     # if(0):
     #     lala
@@ -200,7 +205,10 @@ def ajout(request,nom_poke):
         return HttpResponse("Salut {0} ".format(Profil.get_username()))
     return HttpResponse("Salut, anonyme.")
 
-
+def equipe(request):
+    equipe = Profil.pokemon_equipe.all()
+    return render(request, 'pokedex/equipe.html',
+                    {'pokemon': equipe})
 
 
 
