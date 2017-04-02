@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Pokemon - {{pokemon.nom_pokemon}}{% endblock %}
+
+{% block content %}
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+   
+   
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">{{ user.username }}</h3>
+            </div>
+            <div class="panel-body">
+
+              <div class="row">
+
+                <div class=" col-md-9 col-lg-9 "> 
+                  <table class="table table-user-information">
+                    <tbody>
+                      <tr>
+                        <tr>
+                          <td>Avatar : </td>
+                          <td><img alt="Avatar" src="{{profil.avatar.url}}" class="img-circle img-responsive"></td>
+                        </tr>
+                        <td>Email : </td>
+                        <td>{{user.email}}</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Mot de passe : </td>
+                        <td>*******</td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+                 <div class="panel-footer">
+                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                        <span class="pull-right">
+                            <!-- <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a> -->
+                            <a href="{% url 'deconnexion' %}" data-original-title="Deconnection" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                        </span>
+                    </div>
+            
+          </div>
+        </div>
+{% endblock %}

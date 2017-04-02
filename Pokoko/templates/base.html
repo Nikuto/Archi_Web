@@ -24,30 +24,43 @@
   <div class="container ">
     <div class="row">
 
-            <div class="col-sm-9">
+            <div class="col-sm-8">
+              {% if user.is_authenticated %}
               <p><a href="/equipe/">Voir mon équipe</a>{% block equipe %}{% endblock %}</p>
+              {% else %}
+                <p> Veuillez vous connecter pour voir votre equipe</p>
+              {% endif %}
             </div>
-            <div class="col-sm-3">
-
-                {% if user.is_authenticated %}
-                <table >
-                    <tr>
-                    <td><p>Salut {{ user.username }}</p></td>
-                    </tr>
-                    <tr>
-                    <td><a href="{% url 'deconnexion' %}"> Se deconnecter</a></td>
-                    </tr>
-                </table>
-                {% else %}
-                <table>
-                    <tr>
-                    <td><a href="{% url 'connexion' %}">Connexion</a></td>
-                    </tr>
-                    <tr>
-                    <td ><a href="{% url 'inscription' %}">S'inscrire</a></td>
-                    </tr>
-                </table>
-                {% endif %}
+            <div class="col-sm-4">
+                <div class="col-sm-4">
+                  {% if user.is_authenticated %}
+                    <a href="{% url 'profil' %}"><img alt="Avatar" src="{{profil.avatar.url}} alt="Avatar"></a>
+                  {% else %}
+                    <img src="../media/default.png" alt="Avatar">
+                  {% endif %}
+                </div>
+                <div class="col-sm-8">
+                  {% if user.is_authenticated %}
+                  <table >
+                      <tr>
+                      <td><p>Salut {{ user.username }}</p></td>
+                      </tr>
+                      <tr>
+                      <td><a href="{% url 'deconnexion' %}"> Se deconnecter</a></td>
+                      </tr>
+                  </table>
+                  {% else %}
+                  <table>
+                      <tr>
+                      <td><a href="{% url 'connexion' %}">Connexion</a></td>
+                      </tr>
+                      <tr>
+                      <td ><a href="{% url 'inscription' %}">S'inscrire</a></td>
+                      </tr>
+                  </table>
+                  {% endif %}
+                </div>
+                
             </div>
     </div>
   </div>

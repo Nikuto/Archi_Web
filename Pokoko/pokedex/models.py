@@ -30,7 +30,7 @@ class Relation(models.Model):
 class Profil(models.Model):
 
 	user = models.OneToOneField(User,primary_key=True, on_delete=models.CASCADE,related_name='profil')
-	avatar = models.ImageField(blank=True,upload_to="avatars/")
+	avatar = models.FileField(blank=True,upload_to='avatars',default='default.png')
 	pokemon_equipe = models.ManyToManyField(Pokemon, blank = True)
 	def __str__(self):
 		return "Profil de {0}".format(self.user.username)

@@ -3,17 +3,24 @@
 {% block title %}Pokedex{% endblock %}
 
 {% block content %}
+    
+    {% if user.is_authenticated %}
+        <h1>Voici votre équipe {{ user.username }}</h1>
+    
+    	{% for pokemon in pokemon %}
+    		<div class="col-sm-2">
+        		{% block pokemon %}
+        			{{ block.super }} 
+        		{% endblock %}
+        		<div id="browse_app">
+      				<a class="btn btn-large btn-info" href="/supprimer/{{pokemon.nom_pokemon}}/">Supprimer</a>
+    			</div>
+        	</div>
+        	
+        {% endfor %}
 
-	{% for pokemon in pokemon %}
-		<div class="col-sm-2">
-    		{% block pokemon %}
-    			{{ block.super }} 
-    		{% endblock %}
-    		<div id="browse_app">
-  				<a class="btn btn-large btn-info" href="/supprimer/{{pokemon.nom_pokemon}}/">Supprimer</a>
-			</div>
-    	</div>
-    	
-    {% endfor %}
+    {% else %}
+    <p>Veuillez vous inscrire pour voir cette page.</p>
+    {% endif %}
 
 {% endblock %}

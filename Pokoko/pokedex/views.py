@@ -79,6 +79,7 @@ def inscription(request):
             user = authenticate(username=username, password=password)
             if user:
                 login(request, user)
+                return redirect('index')
             else:
                 error = True
         else:
@@ -206,16 +207,18 @@ def ajout(request,nom_poke):
     # return HttpResponse("Salut, anonyme.")
 
 def equipe(request):
-    user = User.objects.get(username=request.user.username)
-    equipe = user.profil.pokemon_equipe.all()
-    return render(request, 'pokedex/equipe.html',
-                    {'pokemon': equipe})
+    if(User.is_authenticated):
+        user = User.objects.get(username=request.user.username)
+        equipe = user.profil.pokemon_equipe.all()
+        return render(request, 'pokedex/equipe.html',{'pokemon': equipe})
     return redirect('index')
 
 def profil(request):
 
     if(User.is_authenticated):
         return render(request,'pokedex/profil.html')
+    else:
+        return redirect('inscription')
 
     return redirect('index')
 
